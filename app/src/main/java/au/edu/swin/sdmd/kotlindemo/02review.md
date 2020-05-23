@@ -1,5 +1,20 @@
 # Review
 
+## Want to add more counters?
+
+You'll need a `mutableList` then.
+
+Note this is different to `val`/`var`: an immutable list defined with `var` can't have items added to it, but you can make a mutable copy of the list, add your value and assign the new list back to counters.
+
+Try it and see!
+
+````
+    var counters = listOf(c, c1, c)
+    val counters2 = counters.toMutableList()
+    counters2.add(c1)
+    counters = counters2
+````
+
 ## Using with and apply and other scoping functions
 
 These are handy when working with lots of members of a class, say, and also if nullable values are involved.

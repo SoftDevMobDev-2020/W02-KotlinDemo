@@ -22,7 +22,7 @@ fun main(args: Array<String>) {
 
 fun printCounters(counters: List<Counter>) {
     for (c in counters) {
-        println("$c.name is $c.count")
+        println("${c.name} is ${c.count}")
     }
     println("------")
 }
